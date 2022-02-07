@@ -1,7 +1,0 @@
-<manifest>
-  <include name="master.xml"/>
-
-  <extend-project name="util_libs.git"         remote="tiiuae" revision="upstream/bcm2711_gpio_serial_fix"/>
-  <extend-project name="global-components.git" remote="tiiuae" revision="upstream/bcm2711_timers_gpio_fix"/>
-</manifest>
-
