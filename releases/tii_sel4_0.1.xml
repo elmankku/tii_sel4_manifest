@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com/"/>
+  <remote name="lwip" fetch="https://git.savannah.gnu.org/git/"/>
+  <remote name="nanopb" fetch="https://github.com/nanopb"/>
+  <remote name="opensbi" fetch="https://github.com/riscv"/>
+  <remote name="picotcp" fetch="https://github.com/tass-belgium"/>
+  <remote name="polly" fetch="https://github.com/ruslo"/>
+  <remote name="seL4" fetch="https://github.com/seL4"/>
+  <remote name="tiiuae" fetch="ssh://git@github.com/tiiuae/"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org/git/"/>
+  <remote name="zeromq" fetch="https://github.com/zeromq"/>
+  
+  <default remote="seL4" revision="master"/>
+  
+  <project name="camkes-tool.git" path="projects/camkes-tool" remote="tiiuae" revision="55b2e9eb40eb25ce7448b131a6a4d24a8ed70002" dest-branch="master">
+    <linkfile src="docs/index.md" dest="camkes_README.md"/>
+  </project>
+  <project name="camkes-vm-examples.git" path="projects/vm-examples" remote="tiiuae" revision="18e6cf1591c89b748747e568dd7c2b16850920cb" dest-branch="master"/>
+  <project name="camkes-vm-images.git" path="projects/camkes-vm-images" remote="tiiuae" revision="b500bc821dd8244f54fa2094a68aa5e398bd4b5e" dest-branch="master"/>
+  <project name="camkes-vm-linux.git" path="projects/vm-linux" remote="tiiuae" revision="3eafe89fffc3decb385c1ec74c2d744a09b6327e" dest-branch="master"/>
+  <project name="camkes-vm.git" path="projects/vm" remote="tiiuae" revision="208cfa56f7cb24949ae96461aec144bef4442b28" dest-branch="master">
+    <linkfile src="README.md" dest="README.md"/>
+  </project>
+  <project name="capdl.git" path="projects/capdl" revision="234063c8e46b78ce70d1057fc9a3a2165850f791" dest-branch="master"/>
+  <project name="global-components.git" path="projects/global-components" remote="tiiuae" revision="a64e1c85a01b9f684012017ba26348a20ee2f12e" dest-branch="master"/>
+  <project name="libzmq" path="projects/libzmq" remote="zeromq" revision="d062edd8c142384792955796329baf1e5a3377cd" dest-branch="refs/tags/v4.2.5"/>
+  <project name="lwip.git" path="projects/lwip" remote="lwip" revision="159e31b689577dbf69cf0683bbaffbd71fa5ee10" dest-branch="refs/tags/STABLE-2_1_2_RELEASE"/>
+  <project name="meta-raspberrypi" path="vm-images/meta-raspberrypi" remote="yocto" revision="378d4b6e7ba64b6a9a701457cc3780fa896ba5dc"/>
+  <project name="meta-sel4.git" path="vm-images/meta-sel4" remote="tiiuae" revision="e5fd8f00db26847ef9b46f1cbe70c36353a34061"/>
+  <project name="musllibc.git" path="projects/musllibc" revision="3d6b939e8f05cb1d2a1a8c8166609bf2e652e975" dest-branch="sel4"/>
+  <project name="nanopb" path="tools/nanopb" remote="nanopb" revision="298c76003a595894ab573ad0abbde1d82f65e0a1" dest-branch="refs/tags/0.4.3"/>
+  <project name="opensbi" path="tools/opensbi" remote="opensbi" revision="4998a712b2ab504eff306110879ee05af6050177"/>
+  <project name="picotcp.git" path="projects/picotcp" remote="picotcp" revision="13c00a067190f5ec62340ed932a2bb833c366d63" dest-branch="refs/tags/v1.7.0"/>
+  <project name="poky" path="vm-images/poky" remote="yocto" revision="f6d1126fff213460dc6954a5d5fc168606d76b66"/>
+  <project name="polly" path="tools/polly" remote="polly" revision="ef7e79c2c297d456f2742fd0b976f555d058d4e0" dest-branch="master"/>
+  <project name="projects_libs.git" path="projects/projects_libs" revision="ff11dd472c79c2a2c9e09910b85d0fc2f965670d" dest-branch="master"/>
+  <project name="seL4.git" path="kernel" remote="tiiuae" revision="78fa387c8cb656c09103a98fab3280b214d7c0c4" dest-branch="master"/>
+  <project name="seL4_libs.git" path="projects/seL4_libs" revision="d8ae2c44e92d1bf19891344eb038752565f0b30e" dest-branch="master"/>
+  <project name="seL4_projects_libs.git" path="projects/sel4_projects_libs" remote="tiiuae" revision="2cb677105923d793a6c4072dc9d54f946aa38980" dest-branch="master"/>
+  <project name="seL4_tools.git" path="tools/seL4" remote="tiiuae" revision="2a98aa3c83dfb0e03c607f4dd10e25761eb045b4" dest-branch="master">
+    <linkfile src="cmake-tool/griddle" dest="griddle"/>
+  </project>
+  <project name="sel4runtime.git" path="projects/sel4runtime" revision="d935dd05da0cf959e9fd0140af913dc6fdaa0221" dest-branch="master"/>
+  <project name="sel4test.git" path="projects/sel4test" revision="989759fdda9223115233e4800fdfd230f60e85d2" dest-branch="master"/>
+  <project name="tii-sel4-vm" path="projects/tii-sel4-vm" remote="tiiuae" revision="16d9d632c15fc28302f7e35e3d1a4c65a76f498b"/>
+  <project name="tii_sel4_build.git" path="tii_sel4_build" remote="tiiuae" revision="42652874e30b791407268460c64e81445258d3ed">
+    <linkfile src="docker" dest="docker"/>
+    <linkfile src="Makefile" dest="Makefile"/>
+    <linkfile src="scripts" dest="scripts"/>
+    <linkfile src="yocto/setup.sh" dest="vm-images/setup.sh"/>
+  </project>
+  <project name="util_libs.git" path="projects/util_libs" remote="tiiuae" revision="8b67337d339a33c867109478f871df2e1177fd30" dest-branch="master"/>
+</manifest>
